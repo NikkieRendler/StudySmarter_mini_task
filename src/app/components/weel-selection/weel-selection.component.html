@@ -1,0 +1,5 @@
+<div class="week_selector_wrapper">
+    <div *ngFor="let day of week" class="week_selector_element" [ngClass]="day.dayNumber === today ? 'selected': ''">
+        {{day.dayName}}
+    </div>
+</div>
